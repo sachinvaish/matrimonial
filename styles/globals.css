@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    @apply box-border
+}
 body{
     font-family: 'Nunito', sans-serif;
 }
@@ -20,4 +23,16 @@ body{
 
 .btn-primary{
     @apply  bg-pink-600  text-white 
+}
+
+.msg{
+    @apply text-white p-2 rounded-xl my-3 mx-1 whitespace-normal
+}
+
+.msg-in{
+    @apply bg-blue-600 text-left rounded-bl-none
+}
+
+.msg-out{
+    @apply bg-pink-600 text-right rounded-br-none
 }
