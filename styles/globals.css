@@ -4,9 +4,21 @@
 
 *{
     @apply box-border
+    
 }
 body{
     font-family: 'Nunito', sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .logo{
@@ -26,7 +38,7 @@ body{
 }
 
 .msg{
-    @apply text-white p-2 rounded-xl my-3 mx-1 whitespace-normal
+    @apply text-white p-2 rounded-xl my-3 mx-1 whitespace-normal max-w-[90%] h-auto break-words
 }
 
 .msg-in{
@@ -36,3 +48,4 @@ body{
 .msg-out{
     @apply bg-pink-600 text-right rounded-br-none
 }
+
