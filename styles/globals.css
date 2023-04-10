@@ -2,50 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    @apply box-border
-    
-}
-body{
-    font-family: 'Nunito', sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
+#msgArea::-webkit-scrollbar {
+  width: 8px;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+#msgArea::-webkit-scrollbar-track {
+  background: rgb(230, 230, 230);
+  border-radius: 5px;
 }
 
-.logo{
-    font-family: 'Oleo Script';
+#msgArea::-webkit-scrollbar-thumb {
+  background-color: rgb(177, 177, 177);
+  border-radius: 10px;
+  /* border: 3px solid rgb(92, 92, 92); */
 }
 
-.nav-link{
-    @apply px-4 hover:text-pink-600 cursor-pointer
+body {
+  font-family: "Nunito", sans-serif;
 }
 
-.btn{
-    @apply md:px-4 px-5 md:py-2 py-2 font-semibold rounded-sm md:text-base text-sm
+
+
+.logo {
+  font-family: "Oleo Script";
 }
 
-.btn-primary{
-    @apply  bg-pink-600  text-white 
+.nav-link {
+  @apply px-4 hover:text-pink-600 cursor-pointer;
 }
 
-.msg{
-    @apply text-white p-2 rounded-xl my-3 mx-1 whitespace-normal max-w-[90%] h-auto break-words
+.btn {
+  @apply md:px-4 px-5 md:py-2 py-2 font-semibold rounded-sm md:text-base text-sm;
 }
 
-.msg-in{
-    @apply bg-blue-600 text-left rounded-bl-none
+.btn-primary {
+  @apply bg-pink-600  text-white;
 }
 
-.msg-out{
-    @apply bg-pink-600 text-right rounded-br-none
+.msg {
+  @apply px-4 py-1 rounded-xl my-3 mx-1 whitespace-normal max-w-[90%] h-auto break-words;
 }
 
+.msg-in {
+  @apply bg-pink-600 text-gray-50 text-left rounded-bl-none;
+}
+
+.msg-out {
+  @apply bg-gray-200 text-gray-950 text-right rounded-br-none;
+}
